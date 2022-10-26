@@ -1,5 +1,18 @@
+import React from "react";
+
 const CartColumns = () => {
-  return <h1>Add to cart</h1>;
+  return (
+    <div className='cartColumns'>
+      <div className='content'>
+        <h5>Item</h5>
+        <h5>Price</h5>
+        <h5>Quantity</h5>
+        <h5>Subtotal</h5>
+        <span></span>
+      </div>
+      <hr />
+    </div>
+  );
 };
 
 export default CartColumns;
