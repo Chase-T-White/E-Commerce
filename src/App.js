@@ -23,7 +23,14 @@ function App() {
             <Route index element={<Home />} />
             <Route path='about' element={<About />} />
             <Route path='cart' element={<Cart />} />
-            <PrivateRoute path='checkout' element={<Checkout />} />
+            <Route
+              path='checkout'
+              element={
+                <PrivateRoute>
+                  <Checkout />
+                </PrivateRoute>
+              }
+            />
             <Route path='products' element={<Products />}>
               <Route path=':id' element={<SingleProduct />} />
             </Route>
