@@ -6,6 +6,7 @@ import Products from "./Products";
 import SingleProduct from "./SingleProduct";
 import Cart from "./Cart";
 import Error from "./Error";
+import AuthWrapper from "./AuthWrapper";
 
 export {
   Home,
@@ -16,4 +17,5 @@ export {
   SingleProduct,
   Cart,
   Error,
+  AuthWrapper,
 };
